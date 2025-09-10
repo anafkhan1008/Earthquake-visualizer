@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 // Marker color by magnitude
 const getMarkerColor = (mag) => {
+  if (mag >= 2) return "yellow";
   if (mag >= 6) return "red";
   if (mag >= 4) return "orange";
   return "green";
@@ -76,6 +77,10 @@ function EarthquakeMarker({ eq, onEarthquakeSelect, selectedEarthquake, isDark }
             ? "bg-red-100 text-red-600 dark:bg-red-600/20 dark:text-red-400"
             : mag >= 4
             ? "bg-orange-100 text-orange-600 dark:bg-orange-600/20 dark:text-orange-400"
+            : 
+            mag >= 2
+            ? "bg-yellow-100 text-yellow-600 dark:bg-yellow-600/20 dark:text-yellow-400"
+
             : "bg-green-100 text-green-600 dark:bg-green-600/20 dark:text-green-400"
         }`}
       >

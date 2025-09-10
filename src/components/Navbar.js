@@ -31,7 +31,7 @@ export default function Navbar() {
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-800 dark:text-gray-100">
-                Earthquake Monitor
+                Earthquake Visualizer
               </h1>
               <p className="text-sm text-gray-600 dark:text-gray-400">
                 Real-time global seismic activity
