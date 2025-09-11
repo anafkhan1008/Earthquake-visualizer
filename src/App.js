@@ -24,7 +24,6 @@ export default function App() {
       } catch (error) {
         console.error("Error fetching earthquake data:", error);
         setLoading(false);
-        // Mock data for demo purposes
         setEarthquakes([
           {
             id: "1",

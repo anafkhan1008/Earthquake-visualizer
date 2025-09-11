@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+Here’s a **README.md** tailored for your **Earthquake Visualizer** project based on your `package.json` and app setup. You can put this in your GitHub repo:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# 🌍 Earthquake Visualizer
 
-In the project directory, you can run:
+An interactive web application that visualizes real-time and historical earthquake data on a map. Built with **React**, **Leaflet**, and **React-Leaflet**, this app helps users explore earthquake events worldwide with a clean UI and responsive design.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* 📌 **Interactive Map** – Visualize earthquakes using Leaflet.
+* 🔎 **Search & Filter** – Quickly find earthquakes by location or date.
+* 🗂 **Sidebar & Bottom Bar** – Displays earthquake list and detailed info.
+* 📊 **Detailed Information** – Magnitude, depth, location, and coordinates.
+* 🌐 **Live Data** – Fetches earthquake data from the [USGS Earthquake API](https://earthquake.usgs.gov/).
+* 🎨 **Modern UI** – Styled with Tailwind CSS and Lucide icons.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tech Stack
 
-### `npm run build`
+* **Frontend:** React (with React Scripts)
+* **Map:** Leaflet + React-Leaflet
+* **Styling:** Tailwind CSS
+* **Icons:** Lucide React
+* **Testing:** React Testing Library, Jest-DOM
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📂 Project Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the repo:
 
-### `npm run eject`
+```bash
+git clone https://github.com/your-username/earthquake-visualizer.git
+cd earthquake-visualizer
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Install dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Run locally:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+Build for production:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🖼️ Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+(Add some screenshots or GIFs of your app running here)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📡 API Used
 
-### Making a Progressive Web App
+This project fetches earthquake data from:
+[**USGS Earthquake API**](https://earthquake.usgs.gov/fdsnws/event/1/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🧪 Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Run tests:
 
-### Deployment
+```bash
+npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions, issues, and feature requests are welcome!
+Feel free to open a pull request or report a bug.
+
+---
+
+✨ Built with ❤️ using React & Leaflet
+
