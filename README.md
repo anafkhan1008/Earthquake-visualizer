@@ -1,6 +1,4 @@
-Here’s a **README.md** tailored for your **Earthquake Visualizer** project based on your `package.json` and app setup. You can put this in your GitHub repo:
 
----
 
 # 🌍 Earthquake Visualizer
 
