@@ -58,7 +58,9 @@ npm run build
 
 ## 🖼️ Screenshots
 
-(Add some screenshots or GIFs of your app running here)
+![ss1](./public/image.png)                     ![ss2](./public/image2.png)
+
+
 
 ---
 

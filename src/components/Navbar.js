@@ -1,5 +1,5 @@
 // ...existing code...
-import { Layers, Moon, Sun } from "lucide-react";
+import {Moon, Sun } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
@@ -26,8 +26,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Left Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
-              <Layers className="w-5 h-5 text-white" />
+            <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
+              <img src="./earthquake_col.png" alt="Logo" className="w-9 h-9" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-800 dark:text-gray-100">

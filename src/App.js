@@ -30,62 +30,62 @@ export default function App() {
             properties: {
               place: "10km NE of San Francisco, CA",
               mag: 4.2,
-              time: Date.now() - 1000000
+              time: Date.now() - 1000000,
             },
             geometry: {
-              coordinates: [-122.4, 37.8, 10]
-            }
+              coordinates: [-122.4, 37.8, 10],
+            },
           },
           {
-            id: "2", 
+            id: "2",
             properties: {
               place: "Southern Alaska",
               mag: 5.8,
-              time: Date.now() - 2000000
+              time: Date.now() - 2000000,
             },
             geometry: {
-              coordinates: [-152.0, 61.0, 25]
-            }
+              coordinates: [-152.0, 61.0, 25],
+            },
           },
           {
             id: "3",
             properties: {
               place: "Off the coast of Japan",
               mag: 6.1,
-              time: Date.now() - 3000000
+              time: Date.now() - 3000000,
             },
             geometry: {
-              coordinates: [142.0, 38.0, 50]
-            }
+              coordinates: [142.0, 38.0, 50],
+            },
           },
           {
             id: "4",
             properties: {
               place: "Central Italy",
               mag: 3.4,
-              time: Date.now() - 500000
+              time: Date.now() - 500000,
             },
             geometry: {
-              coordinates: [13.0, 42.0, 8]
-            }
+              coordinates: [13.0, 42.0, 8],
+            },
           },
           {
             id: "5",
             properties: {
               place: "Chile Coast",
               mag: 5.1,
-              time: Date.now() - 1500000
+              time: Date.now() - 1500000,
             },
             geometry: {
-              coordinates: [-71.0, -33.0, 35]
-            }
-          }
+              coordinates: [-71.0, -33.0, 35],
+            },
+          },
         ]);
       }
     };
 
     fetchEarthquakes();
-    
+
     // Refresh data every 5 minutes
     const interval = setInterval(fetchEarthquakes, 5 * 60 * 1000);
     return () => clearInterval(interval);
@@ -102,10 +102,13 @@ export default function App() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900 dark:text-gray-100">
       <Navbar />
-      <div className="flex flex-1 p-6 gap-6" style={{ height: 'calc(100vh - 140px)' }}>
-        {/* Sidebar - 30% width */}
-        <div className="w-[30%] min-w-[320px]">
-          <Sidebar 
+      <div
+        className="flex flex-col lg:flex-row flex-1 p-4 gap-4"
+        style={{ height: "calc(100vh - 140px)" }}
+      >
+        {/* Sidebar */}
+        <div className="w-full lg:w-[30%] min-w-[280px]">
+          <Sidebar
             earthquakes={filteredEarthquakes}
             selectedEarthquake={selectedEarthquake}
             onEarthquakeSelect={setSelectedEarthquake}
@@ -113,16 +116,17 @@ export default function App() {
             setSearch={setSearch}
           />
         </div>
-        {/* Map - 70% width */}
-        <div className="w-[70%]">
-          <MapView 
+
+        {/* Map */}
+        <div className="flex-1 w-full lg:w-[70%]">
+          <MapView
             earthquakes={filteredEarthquakes}
             selectedEarthquake={selectedEarthquake}
             onEarthquakeSelect={setSelectedEarthquake}
           />
         </div>
       </div>
-      <BottomBar 
+      <BottomBar
         count={filteredEarthquakes.length}
         selectedEarthquake={selectedEarthquake}
       />
